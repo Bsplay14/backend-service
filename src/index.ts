@@ -21,7 +21,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Inicializacion de la base de datos y el servidor
 AppDataSource.initialize()
 .then(() => {
-    app.listen(() => {
+    app.listen(PORT, () => {
         console.log(`Servidor corriendo en http://localhost:${PORT}\n`);
         console.log(`Endpoints:`);
         console.log(`API Products http://localhost:${PORT}/api/products\n`);
