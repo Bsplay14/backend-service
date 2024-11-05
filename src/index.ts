@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use("/api/", router); // Ruta de Productos
+app.use("/api/products", router); // Ruta de Productos
 
 // Documentacion Swagger
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
